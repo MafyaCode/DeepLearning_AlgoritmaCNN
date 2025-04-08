@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and debug files
+*.log
+*.out
+*.err
+
+# Data files
+*.csv
+*.h5
+*.json
+*.db
+*.sqlite3
+
+# TensorFlow / PyTorch checkpoints
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+
+# Model files
+*.h5
+*.onnx
+*.tflite
+*.pb
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
