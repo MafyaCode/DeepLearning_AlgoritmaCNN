@@ -15,7 +15,7 @@ mp_drawing = mp.solutions.drawing_utils
 # --- Inisialisasi OpenCV VideoCapture ---
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
-if not cap.isOpened():
+if not cap.isOpened(): 
     print("Error: Tidak bisa membuka webcam.")
     exit()
 
@@ -153,5 +153,5 @@ print("Aplikasi ditutup.")
 # 5.  **Blok Menggambar Selalu Jalan:** Kode untuk menggambar kotak wajah, teks, dan landmark tangan sekarang berjalan di *setiap* iterasi loop, tetapi menggunakan data dari `last_known_face_results` dan `last_known_hand_landmarks`. Ini memastikan bahwa meskipun analisis tidak dilakukan di setiap frame, tampilan visual (kotak, teks, landmark) tetap ada berdasarkan deteksi terakhir.
 # 6.  **Penyesuaian Koordinat Teks:** Menambahkan logika sederhana agar teks info wajah tidak keluar dari batas atas frame.
 # 7.  **Perhitungan FPS:** Sedikit diperbaiki untuk menghindari potensi pembagian dengan nol.
-#
+# 
 # Dengan cara ini, beban pemrosesan utama (DeepFace dan MediaPipe) berkurang secara signifikan, memungkinkan aplikasi berjalan lebih lancar pada perangkat yang mungkin tidak terlalu kuat, sambil tetap menampilkan visualisasi yang relatif upda
